@@ -23,10 +23,9 @@
             <p>You know you want to.</p>
         </div>
 
+        <form action="/">
         <div class="form-content">
             <h1>Let's do this!</h1>
-
-            <form action="/">
                 <div class="input-container">
                     <div>
                         <label for="first_name">FIRST NAME *</label>
@@ -45,27 +44,31 @@
     
                     <div>
                         <label for="phone_number">PHONE NUMBER *</label>
-                        <input type="tel" name="phone_number" id="phone_number" required>
+                        <input type="tel" name="phone_number" id="phone_number" required min="3">
                     </div>
     
                     <div>
                         <label for="password">PASSWORD *</label>
-                        <input type="password" name="password" id="password" required maxlength="24">
+                        <input type="password" name="password" id="password" required minlength="8" maxlength="24">
+                        <span></span>
                     </div>
     
                     <div>
                         <label for="confirmed_password">CONFIRM PASSWORD *</label>
-                        <input type="password" name="confirmed_password" id="confirmed_password" required maxlength="24">
+                        <input type="password" name="confirmed_password" id="confirmed_password" required minlength="8" maxlength="24">
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
 
-        <div class="account-info">
-            <button>Create account</button>
-                
-            <p>Already have an account? <strong>Log in</strong></p>
-        </div>
+            <div class="account-info">
+                <button>Create account</button>
+                    
+                <p>Already have an account? <strong>Log in</strong></p>
+            </div>
+        </form>
+        
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

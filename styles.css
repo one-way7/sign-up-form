@@ -106,6 +106,20 @@ h1 {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.invalid-password {
+    position: relative;
+}
+
+.invalid-password::after {
+    position: absolute;
+    content: '* Password do not match';
+    width: 150px;
+    font-size: 12px;
+    color: red;
+    margin-top: 6px;
+    margin-left: 2px;
+}
+
 .account-info {
     padding-left: 35px;
 }
