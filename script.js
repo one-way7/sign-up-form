@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (password.value === confirmedPassword.value) {
             password.nextElementSibling.classList.remove('invalid-password');
             
-            prompt('The form has been successfully submitted')
+            form.reset();
+            alert('The form has been successfully submitted')
         } else {
             password.nextElementSibling.classList.add('invalid-password');
             return;
